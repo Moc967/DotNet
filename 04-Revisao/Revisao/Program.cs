@@ -15,12 +15,12 @@
                 switch (opcaoUsuario)
                 {
                     case "1":
-                        //Todo: Inserir novo aluno
                         Console.WriteLine("Informe o novo do aluno:");
                         var aluno = new Aluno();
                         
                         aluno.Nome = Console.ReadLine();
                         
+                        Console.WriteLine();
                         Console.WriteLine("Informe a nota do aluno:");
 
                         if(decimal.TryParse(Console.ReadLine(), out decimal nota))
@@ -33,11 +33,9 @@
                         }
                         alunos[indiceAluno]=aluno;
                         indiceAluno++;
-
                         
                         break;
                     case "2":
-                        //Todo: Listar alunos   
                         foreach (var a in alunos)
                         {
                             if(!string.IsNullOrEmpty(a.Nome))
@@ -47,18 +45,47 @@
                         }
                         break;
                     case "3":
-                        //Todo: Calcular media geral
-                        //CalcularMediaGeral()
+                        decimal notaTotal = 0;
+                        var nrAlunos = 0;
+
+                        for (int i=0; i< alunos.Length;i++)
+                        {
+                            if(!string.IsNullOrEmpty(alunos[i].Nome))
+                            {
+                                notaTotal = notaTotal + alunos[i].Nota;
+                                nrAlunos++;
+                            }
+                        }
+                        var mediaGeral = notaTotal / nrAlunos;
+                        Conceito conceitoGeral;
+
+                        if(mediaGeral < 2)
+                        {
+                            conceitoGeral = Conceito.E;
+                        }
+                        else if(mediaGeral < 4)
+                        {
+                            conceitoGeral = Conceito.D;
+                        }
+                        else if(mediaGeral < 6)
+                        {
+                            conceitoGeral = Conceito.C;
+                        }
+                        else if(mediaGeral < 8)
+                        {
+                            conceitoGeral = Conceito.B;
+                        }
+                        else
+                        {
+                            conceitoGeral = Conceito.A;
+                        }
+                        Console.WriteLine($"A média geral é {mediaGeral} e o conceito é {conceitoGeral}");
                         break;
                     default:
-                        throw new ArgumentOutOfRangeException();
-
+                        throw new ArgumentOutOfRangeException( "Opcao invalida");
                 }
                 opcaoUsuario = ObterOpcaoDoUsuario();
-
             }
-
-
         }
 
         private static string ObterOpcaoDoUsuario()
