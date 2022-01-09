@@ -7,24 +7,31 @@ namespace POO
     {
         static void Main(string[] args)
         {
-            Pessoa pessoa1 = new Pessoa();
-            pessoa1.Nome = "João";
-            pessoa1.Sobrenome = "Silva";
-            pessoa1.Idade = 25;
-            pessoa1.Sexo = "Masculino";
-            pessoa1.EstadoCivil = "Solteiro";
-            pessoa1.Profissao = "Desenvolvedor";
-            pessoa1.Email = "";
+           Corrente c1 = new Corrente();
+           c1.Creditar(100);
+           c1.ExibirSaldo();    
+           
 
-            pessoa1.Apresentar();
+           Diretor d1 = new Diretor();
+              d1.Apresentar();
+            // Pessoa pessoa1 = new Pessoa();
+            // pessoa1.Nome = "João";
+            // pessoa1.Sobrenome = "Silva";
+            // pessoa1.Idade = 25;
+            // pessoa1.Sexo = "Masculino";
+            // pessoa1.EstadoCivil = "Solteiro";
+            // pessoa1.Profissao = "Desenvolvedor";
+            // pessoa1.Email = "";
 
-            Retangulo retangulo1 = new Retangulo();
-            retangulo1.DefinirMedidas(10, 20);
+            // pessoa1.Apresentar();
 
-            System.Console.WriteLine("Área do retângulo: " + retangulo1.CalcularArea());
+            // Retangulo retangulo1 = new Retangulo();
+            // retangulo1.DefinirMedidas(10, 20);
 
-            Calculadora calculadora1 = new Calculadora();
-            System.Console.WriteLine("Soma: " + calculadora1.Somar(10, 20, 30));
+            // System.Console.WriteLine("Área do retângulo: " + retangulo1.CalcularArea());
+
+            // Calculadora calculadora1 = new Calculadora();
+            // System.Console.WriteLine("Soma: " + calculadora1.Somar(10, 20, 30));
         }
     }
 
