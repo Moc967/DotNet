@@ -40,7 +40,7 @@
                         //Todo: Listar alunos   
                         foreach (var a in alunos)
                         {
-                            if(string.IsNullOrEmpty(a.Nome))
+                            if(!string.IsNullOrEmpty(a.Nome))
                             {
                                 Console.WriteLine($"Aluno: {a.Nome}, Nota: {a.Nota}");
                             }
