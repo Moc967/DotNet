@@ -1,4 +1,6 @@
-﻿namespace Models
+﻿using POO.Models;
+
+namespace POO
 {
 
     class Program
@@ -15,6 +17,14 @@
             pessoa1.Email = "";
 
             pessoa1.Apresentar();
+
+            Retangulo retangulo1 = new Retangulo();
+            retangulo1.DefinirMedidas(10, 20);
+
+            System.Console.WriteLine("Área do retângulo: " + retangulo1.CalcularArea());
+
+            Calculadora calculadora1 = new Calculadora();
+            System.Console.WriteLine("Soma: " + calculadora1.Somar(10, 20, 30));
         }
     }
 
