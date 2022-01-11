@@ -1,5 +1,8 @@
-# Instructions to create a solution and project using dotnet
+# Dotnet training materials
 
+This repository contains many tests and programs developed during dotnet training on DIO Bootcamps.
+
+## Instructions to create a solution and project using dotnet
 1. dotnet new sln -n yourprojectname
 
 2. dotnet new console -n yourprojectname
