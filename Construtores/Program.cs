@@ -6,16 +6,16 @@ namespace Construtores
     {
         static void Main(string[] args)
         {
-            Pessoa p1 = new Pessoa("Magnovaldo", "Silva");
-            p1.Apresentar();
+         
+            Data d1 = new Data();
+            int mes = d1.LerMes();
+            d1.SetMes(mes);
+            d1.ApresentarMes();
 
-            Log log = Log.GetInstance();
-            log.PropriedadeLog = "Teste Instancia";
-
-            Log log2 = Log.GetInstance();
-            System.Console.WriteLine(log2.PropriedadeLog);
-
+            d1.dia = 10;
+            System.Console.WriteLine("O dia é {0}", d1.dia);
 
         }
+
     }
 }       

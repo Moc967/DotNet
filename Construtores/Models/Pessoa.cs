@@ -14,6 +14,7 @@ namespace Construtores.Models
         {
             this.nome = nome;
             this.sobrenome = sobrenome;
+            System.Console.WriteLine("Construtor Pessoa");
         }
         public void Apresentar()
         {
