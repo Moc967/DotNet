@@ -1,4 +1,5 @@
-﻿using Colecoes.Helper;
+﻿using System.Collections.Generic;
+using Colecoes.Helper;
 
 namespace Colecoes
 {
@@ -6,11 +7,29 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            OperacoesArray op = new OperacoesArray();
-            int [] array = new int[10]{12, 3, 1, 19, 11, 5, 14, 2, 13, 7};
-            int [] arrayCopia = new int[15];
+            List<string> estados = new List<string>();
+            estados.Add("RJ");
+            estados.Add("SP");
+            estados.Add("MG");
+            estados.Add("ES");
+            estados.Add("SC");
+            estados.Add("PR");
+            estados.Add("RS");
 
-            string [] arrayString = op.ConvertParaArrayString(array);
+            System.Console.WriteLine("Quantidade de elementos na lista: " + estados.Count);
+
+
+            foreach (string estado in estados)
+            {
+                System.Console.WriteLine(estado);
+            }
+
+            
+            // OperacoesArray op = new OperacoesArray();
+            // int [] array = new int[10]{12, 3, 1, 19, 11, 5, 14, 2, 13, 7};
+            // int [] arrayCopia = new int[15];
+
+            // string [] arrayString = op.ConvertParaArrayString(array);
 
             // int valorProcurado = 13;
 
