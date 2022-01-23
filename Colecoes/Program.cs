@@ -10,18 +10,59 @@ namespace Colecoes
             int [] array = new int[10]{12, 3, 1, 19, 11, 5, 14, 2, 13, 7};
             int [] arrayCopia = new int[15];
 
-            int valorProcurado = 99;
-            
-            bool existe = op.Existe(array, valorProcurado);
+            int valorProcurado = 13;
 
-            if (existe)
-            {
-                Console.WriteLine("Encontrei o valor {0}", valorProcurado);
-            }
-            else
-            {
-                Console.WriteLine("Não encontrei o valor {0}", valorProcurado);
-            }
+            System.Console.WriteLine("Capacidade atual do array: " + array.Length);
+
+            op.RedimensionarArray(ref array, array.Length*2);
+
+            System.Console.WriteLine("Nova capacidade do array: " + array.Length);
+
+            op.ImprimirArray(array);
+
+            // int indice = op.ObterIndice(array, valorProcurado);
+
+            // if (indice == -1)
+            // {
+            //     Console.WriteLine("O valor {0} não foi encontrado no array", valorProcurado);
+            // }
+            // else
+            // {
+            //     Console.WriteLine("O valor {0} foi encontrado na posição {0} do array", indice);
+            // }
+
+            // int valorAchado = op.ObterValor(array, valorProcurado);
+
+            // if(valorAchado > 0)
+            // {
+            //     Console.WriteLine("Encontrei o valor {0}", valorAchado);
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Não encontrei o valor {0}", valorProcurado);
+            // }
+
+            // bool TodosMaiorQue = op.TodosMaiorQue(array, valorProcurado);
+
+            // if( TodosMaiorQue )
+            // {
+            //     Console.WriteLine("Todos os elementos são maiores que {0}", valorProcurado);
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Existem elementos com valores maiores que {0}", valorProcurado);
+            // }
+            
+            // bool existe = op.Existe(array, valorProcurado);
+
+            // if (existe)
+            // {
+            //     Console.WriteLine("Encontrei o valor {0}", valorProcurado);
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Não encontrei o valor {0}", valorProcurado);
+            // }
             
         // System.Console.WriteLine("Array antes da ordenação: ");            
         // op.ImprimirArray(array);
