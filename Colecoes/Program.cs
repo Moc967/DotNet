@@ -10,15 +10,17 @@ namespace Colecoes
             int [] array = new int[10]{12, 3, 1, 19, 11, 5, 14, 2, 13, 7};
             int [] arrayCopia = new int[15];
 
-            int valorProcurado = 13;
+            string [] arrayString = op.ConvertParaArrayString(array);
 
-            System.Console.WriteLine("Capacidade atual do array: " + array.Length);
+            // int valorProcurado = 13;
 
-            op.RedimensionarArray(ref array, array.Length*2);
+            // System.Console.WriteLine("Capacidade atual do array: " + array.Length);
 
-            System.Console.WriteLine("Nova capacidade do array: " + array.Length);
+            // op.RedimensionarArray(ref array, array.Length*2);
 
-            op.ImprimirArray(array);
+            // System.Console.WriteLine("Nova capacidade do array: " + array.Length);
+
+            // op.ImprimirArray(array);
 
             // int indice = op.ObterIndice(array, valorProcurado);
 
