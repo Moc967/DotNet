@@ -8,12 +8,26 @@ namespace Colecoes
         {
             OperacoesArray op = new OperacoesArray();
             int [] array = new int[10]{12, 3, 1, 19, 11, 5, 14, 2, 13, 7};
+            int [] arrayCopia = new int[10];
+            
             System.Console.WriteLine("Array antes da ordenação: ");            
             op.ImprimirArray(array);
 
-            op.OrdenarBubbleSort(ref array);
-            System.Console.WriteLine("Array depois da ordenação: ");
-            op.ImprimirArray(array);
+         //   op.OrdenarBubbleSort(ref array);
+         //   op.Ordenar(ref array);
+           
+           System.Console.WriteLine("Array antes da copia: ");
+           op.ImprimirArray(arrayCopia);
+           
+           op.Copiar(ref array, ref arrayCopia);
+    	   
+           System.Console.WriteLine("Array depois da copia: ");
+           op.ImprimirArray(arrayCopia);
+
+         //   System.Console.WriteLine("Array depois da ordenação: ");
+         //   op.ImprimirArray(array);
+
+
         
         // int[,] matriz = new int[4,2]
         // {
