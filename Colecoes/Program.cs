@@ -7,25 +7,44 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            Stack<string> pilhaLivros = new Stack<string>();
+            Dictionary<string, string> estados = new Dictionary<string, string>();
+            estados.Add("AC", "Acre");
+            estados.Add("AL", "Alagoas");
+            estados.Add("AP", "Amapá");
+            estados.Add("BA", "Bahia");
+            estados.Add("CE", "Ceará");
+            estados.Add("DF", "Distrito Federal");
+            estados.Add("ES", "Espírito Santo");
 
-            pilhaLivros.Push("O Senhor dos Anéis");
-            pilhaLivros.Push("O Hobbit");
-            pilhaLivros.Push("Star Wars");
-            pilhaLivros.Push("A Coisa");
-            pilhaLivros.Push("O Senhor dos Anéis , As Duas Torres");
-            pilhaLivros.Push("O Hobbit, A Desolação");
-
-            System.Console.WriteLine("Livros para a Leitura: " + pilhaLivros.Count);
-            
-            while (pilhaLivros.Count > 0)
+            foreach (var estado in estados)
             {
-                System.Console.WriteLine("Proximo livro para leitura: " + pilhaLivros.Peek());
-                System.Console.WriteLine($"{pilhaLivros.Pop()}, lido com sucesso!");
-            }   
+                System.Console.WriteLine($"{estado.Key} - {estado.Value}");
+            }
             
-            System.Console.WriteLine("Livros para a Leitura: " + pilhaLivros.Count);
+            string valorProcurado = "CE";
+            System.Console.WriteLine($"Valor procurado: {valorProcurado}");
+
+            //
+            // Stack<string> pilhaLivros = new Stack<string>();
+
+            // pilhaLivros.Push("O Senhor dos Anéis");
+            // pilhaLivros.Push("O Hobbit");
+            // pilhaLivros.Push("Star Wars");
+            // pilhaLivros.Push("A Coisa");
+            // pilhaLivros.Push("O Senhor dos Anéis , As Duas Torres");
+            // pilhaLivros.Push("O Hobbit, A Desolação");
+
+            // System.Console.WriteLine("Livros para a Leitura: " + pilhaLivros.Count);
             
+            // while (pilhaLivros.Count > 0)
+            // {
+            //     System.Console.WriteLine("Proximo livro para leitura: " + pilhaLivros.Peek());
+            //     System.Console.WriteLine($"{pilhaLivros.Pop()}, lido com sucesso!");
+            // }   
+            
+            // System.Console.WriteLine("Livros para a Leitura: " + pilhaLivros.Count);
+                        
+            //
             // Queue<string> fila = new Queue<string>();
             // fila.Enqueue("Primeiro");
             // fila.Enqueue("Segundo");
