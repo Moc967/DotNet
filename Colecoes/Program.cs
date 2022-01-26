@@ -7,27 +7,46 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            Queue<string> fila = new Queue<string>();
-            fila.Enqueue("Primeiro");
-            fila.Enqueue("Segundo");
-            fila.Enqueue("Terceiro");
-            fila.Enqueue("Quarto");
-            fila.Enqueue("Quinto");
+            Stack<string> pilhaLivros = new Stack<string>();
 
-            foreach (var item in fila)
+            pilhaLivros.Push("O Senhor dos Anéis");
+            pilhaLivros.Push("O Hobbit");
+            pilhaLivros.Push("Star Wars");
+            pilhaLivros.Push("A Coisa");
+            pilhaLivros.Push("O Senhor dos Anéis , As Duas Torres");
+            pilhaLivros.Push("O Hobbit, A Desolação");
+
+            System.Console.WriteLine("Livros para a Leitura: " + pilhaLivros.Count);
+            
+            while (pilhaLivros.Count > 0)
             {
-                System.Console.WriteLine(item);
+                System.Console.WriteLine("Proximo livro para leitura: " + pilhaLivros.Peek());
+                System.Console.WriteLine($"{pilhaLivros.Pop()}, lido com sucesso!");
             }   
             
-            System.Console.WriteLine("Pessoas na fila: " + fila.Count);
-
-            while (fila.Count > 0)
-            {
-                System.Console.WriteLine("Vez de: " + fila.Peek());
-                System.Console.WriteLine(fila.Dequeue() + " atendido");
-            }
+            System.Console.WriteLine("Livros para a Leitura: " + pilhaLivros.Count);
             
-            System.Console.WriteLine("Pessoas na fila: " + fila.Count);
+            // Queue<string> fila = new Queue<string>();
+            // fila.Enqueue("Primeiro");
+            // fila.Enqueue("Segundo");
+            // fila.Enqueue("Terceiro");
+            // fila.Enqueue("Quarto");
+            // fila.Enqueue("Quinto");
+
+            // foreach (var item in fila)
+            // {
+            //     System.Console.WriteLine(item);
+            // }   
+            
+            // System.Console.WriteLine("Pessoas na fila: " + fila.Count);
+
+            // while (fila.Count > 0)
+            // {
+            //     System.Console.WriteLine("Vez de: " + fila.Peek());
+            //     System.Console.WriteLine(fila.Dequeue() + " atendido");
+            // }
+            
+            // System.Console.WriteLine("Pessoas na fila: " + fila.Count);
             
             // OperacoesLista opLista = new OperacoesLista();
             // List<string> estados = new List<string>();
