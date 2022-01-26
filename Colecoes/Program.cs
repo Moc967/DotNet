@@ -7,22 +7,37 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            Dictionary<string, string> estados = new Dictionary<string, string>();
-            estados.Add("AC", "Acre");
-            estados.Add("AL", "Alagoas");
-            estados.Add("AP", "Amapá");
-            estados.Add("BA", "Bahia");
-            estados.Add("CE", "Ceará");
-            estados.Add("DF", "Distrito Federal");
-            estados.Add("ES", "Espírito Santo");
+            int[] arrayNumeros = new int[] { 48, 196, 23, 19, 11, 43, 2, 12, 6, 17, 18, 29, 10 };
 
-            foreach (var estado in estados)
-            {
-                System.Console.WriteLine($"{estado.Key} - {estado.Value}");
-            }
+            var numerosParesQuery =
+                from numero in arrayNumeros
+                where numero % 2 == 0
+                orderby numero
+                select numero;
             
-            string valorProcurado = "CE";
-            System.Console.WriteLine($"Valor procurado: {valorProcurado}");
+            var numerosParesMetodo = arrayNumeros.Where(numero => numero % 2 == 0).OrderBy(numero => numero).ToList();
+            
+            System.Console.WriteLine("Numeros pares query : " + string.Join(", ", numerosParesQuery));
+            System.Console.WriteLine("Numeros pares metodo : " + string.Join(", ", numerosParesMetodo));
+            
+            //
+            
+            // Dictionary<string, string> estados = new Dictionary<string, string>();
+            // estados.Add("AC", "Acre");
+            // estados.Add("AL", "Alagoas");
+            // estados.Add("AP", "Amapá");
+            // estados.Add("BA", "Bahia");
+            // estados.Add("CE", "Ceará");
+            // estados.Add("DF", "Distrito Federal");
+            // estados.Add("ES", "Espírito Santo");
+
+            // foreach (var estado in estados)
+            // {
+            //     System.Console.WriteLine($"{estado.Key} - {estado.Value}");
+            // }
+            
+            // string valorProcurado = "CE";
+            // System.Console.WriteLine($"Valor procurado: {valorProcurado}");
 
             //
             // Stack<string> pilhaLivros = new Stack<string>();
