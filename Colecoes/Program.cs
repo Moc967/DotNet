@@ -7,18 +7,34 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            int[] arrayNumeros = new int[] { 48, 196, 23, 19, 11, 43, 2, 12, 6, 17, 18, 29, 10 };
+            int[] arrayNumeros = new int[] { 48, 196, 23, 19,77,48,17,10,18,29,43, 11, 0, 43, 2, 12, 6, 17, 18, 29, 10 };
 
-            var numerosParesQuery =
-                from numero in arrayNumeros
-                where numero % 2 == 0
-                orderby numero
-                select numero;
+            var minimo = arrayNumeros.Min();
+            var maximo = arrayNumeros.Max();
+            var medio = arrayNumeros.Average();
+            var soma = arrayNumeros.Sum();
+            var arrayUnico = arrayNumeros.Distinct().ToArray();
+
+            System.Console.WriteLine($"Minimo: {minimo}");
+            System.Console.WriteLine($"Maximo: {maximo}");
+            System.Console.WriteLine($"Medio: {medio}");
+            System.Console.WriteLine($"Soma: {soma}");
+            System.Console.WriteLine($"Array original: {string.Join(", ", arrayNumeros)}");
+            System.Console.WriteLine($"Array distinto: {string.Join(", ", arrayUnico)}"); 
+
+
+
             
-            var numerosParesMetodo = arrayNumeros.Where(numero => numero % 2 == 0).OrderBy(numero => numero).ToList();
+            // var numerosParesQuery =
+            //     from numero in arrayNumeros
+            //     where numero % 2 == 0
+            //     orderby numero
+            //     select numero;
             
-            System.Console.WriteLine("Numeros pares query : " + string.Join(", ", numerosParesQuery));
-            System.Console.WriteLine("Numeros pares metodo : " + string.Join(", ", numerosParesMetodo));
+            // var numerosParesMetodo = arrayNumeros.Where(numero => numero % 2 == 0).OrderBy(numero => numero).ToList();
+            
+            // System.Console.WriteLine("Numeros pares query : " + string.Join(", ", numerosParesQuery));
+            // System.Console.WriteLine("Numeros pares metodo : " + string.Join(", ", numerosParesMetodo));
             
             //
             
