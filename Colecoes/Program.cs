@@ -7,6 +7,28 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
+            Queue<string> fila = new Queue<string>();
+            fila.Enqueue("Primeiro");
+            fila.Enqueue("Segundo");
+            fila.Enqueue("Terceiro");
+            fila.Enqueue("Quarto");
+            fila.Enqueue("Quinto");
+
+            foreach (var item in fila)
+            {
+                System.Console.WriteLine(item);
+            }   
+            
+            System.Console.WriteLine("Pessoas na fila: " + fila.Count);
+
+            while (fila.Count > 0)
+            {
+                System.Console.WriteLine("Vez de: " + fila.Peek());
+                System.Console.WriteLine(fila.Dequeue() + " atendido");
+            }
+            
+            System.Console.WriteLine("Pessoas na fila: " + fila.Count);
+            
             // OperacoesLista opLista = new OperacoesLista();
             // List<string> estados = new List<string>();
             // string[] estadosArray = new string[10] {"BA", "PE", "RN", "AL", "CE", "MA", "PI", "GO", "DF", "MT"};
@@ -26,7 +48,7 @@ namespace Colecoes
 
             // estados.Remove("MG");
             // System.Console.WriteLine("Quantidade de elementos na lista após remoção: " + estados.Count);
-            opLista.ImprimirListaString(estados);
+            // opLista.ImprimirListaString(estados);
 
 
 
