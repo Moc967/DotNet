@@ -7,7 +7,11 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
+            OperacoesLista opLista = new OperacoesLista();
             List<string> estados = new List<string>();
+            string[] estadosArray = new string[10] {"BA", "PE", "RN", "AL", "CE", "MA", "PI", "GO", "DF", "MT"};
+
+            
             estados.Add("RJ");
             estados.Add("SP");
             estados.Add("MG");
@@ -17,12 +21,23 @@ namespace Colecoes
             estados.Add("RS");
 
             System.Console.WriteLine("Quantidade de elementos na lista: " + estados.Count);
+            estados.AddRange(estadosArray);
+            opLista.ImprimirListaString(estados);
+
+            // estados.Remove("MG");
+            // System.Console.WriteLine("Quantidade de elementos na lista após remoção: " + estados.Count);
+            opLista.ImprimirListaString(estados);
 
 
-            foreach (string estado in estados)
-            {
-                System.Console.WriteLine(estado);
-            }
+
+            // for (int i = 0; i < estados.Count; i++)
+            // {
+            //     System.Console.WriteLine($"Indice {i}, Valor: {estados[i]}");
+            // }
+            // foreach (string estado in estados)
+            // {
+            //     System.Console.WriteLine(estado);
+            // }
 
             
             // OperacoesArray op = new OperacoesArray();
