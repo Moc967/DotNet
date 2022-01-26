@@ -7,22 +7,22 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            OperacoesLista opLista = new OperacoesLista();
-            List<string> estados = new List<string>();
-            string[] estadosArray = new string[10] {"BA", "PE", "RN", "AL", "CE", "MA", "PI", "GO", "DF", "MT"};
+            // OperacoesLista opLista = new OperacoesLista();
+            // List<string> estados = new List<string>();
+            // string[] estadosArray = new string[10] {"BA", "PE", "RN", "AL", "CE", "MA", "PI", "GO", "DF", "MT"};
 
             
-            estados.Add("RJ");
-            estados.Add("SP");
-            estados.Add("MG");
-            estados.Add("ES");
-            estados.Add("SC");
-            estados.Add("PR");
-            estados.Add("RS");
+            // estados.Add("RJ");
+            // estados.Add("SP");
+            // estados.Add("MG");
+            // estados.Add("ES");
+            // estados.Add("SC");
+            // estados.Add("PR");
+            // estados.Add("RS");
 
-            System.Console.WriteLine("Quantidade de elementos na lista: " + estados.Count);
-            estados.AddRange(estadosArray);
-            opLista.ImprimirListaString(estados);
+            // System.Console.WriteLine("Quantidade de elementos na lista: " + estados.Count);
+            // estados.AddRange(estadosArray);
+            // opLista.ImprimirListaString(estados);
 
             // estados.Remove("MG");
             // System.Console.WriteLine("Quantidade de elementos na lista após remoção: " + estados.Count);
