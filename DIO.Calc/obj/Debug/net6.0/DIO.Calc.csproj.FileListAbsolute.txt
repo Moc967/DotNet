@@ -1,0 +1,15 @@
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\bin\Debug\net6.0\DIO.Calc.exe
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\bin\Debug\net6.0\DIO.Calc.deps.json
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\bin\Debug\net6.0\DIO.Calc.runtimeconfig.json
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\bin\Debug\net6.0\DIO.Calc.dll
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\bin\Debug\net6.0\ref\DIO.Calc.dll
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\bin\Debug\net6.0\DIO.Calc.pdb
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\DIO.Calc.csproj.AssemblyReference.cache
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\DIO.Calc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\DIO.Calc.AssemblyInfoInputs.cache
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\DIO.Calc.AssemblyInfo.cs
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\DIO.Calc.csproj.CoreCompileInputs.cache
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\DIO.Calc.dll
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\ref\DIO.Calc.dll
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\DIO.Calc.pdb
+C:\Users\magno\OneDrive\Documentos\Code+\dotNet\DIO.Calc\obj\Debug\net6.0\DIO.Calc.genruntimeconfig.cache
